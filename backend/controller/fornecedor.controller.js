@@ -29,6 +29,8 @@ const listar = async(req,res)=>{
         if(!fornecedor){
             return res.status(404).json({message: 'Paciente não encontrado'})
         }
+
+    }catch(err){
         
     }
 }
