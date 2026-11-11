@@ -1,0 +1,24 @@
+### 1. Cadastrar funcionário
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+
+{
+    "nome": "Roberto",
+    "email": "roberto@gmail.com",
+    "senha": "abc"
+}
+
+
+
+
+### 2. Fazer login (armazena o token automaticamente)
+# @name loginReq
+POST http://localhost:3000/login
+Content-Type: application/json
+
+
+{
+    "email": "roberto@gmail.com",
+    "senha": "abc"
+}

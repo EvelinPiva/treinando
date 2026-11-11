@@ -13,10 +13,14 @@ const produtoController = require('./controller/produto.controller')
 
 require('./models/rel')
 const authController = require('./controller/auth.controller')
+const authMiddleware = require('./middleware/auth.middleware')
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cors())
+
+
+app.post('/funcionario',funcionarioController.cadastrar)
 
 
 app.get('/',(req,res)=>{

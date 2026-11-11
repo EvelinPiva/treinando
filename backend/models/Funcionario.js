@@ -8,15 +8,15 @@ const Funcionario = db.define('funcionario',{
         autoIncrement: true
     },
     nome:{
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(100),
         allowNull: false
     },
     email:{
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(100),
         allowNull: false
     },
     senha:{
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(100),
         allowNull: false
     },
 },{
